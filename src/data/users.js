@@ -1,0 +1,50 @@
+//id,firstName,lastName,city,age,creditCardNumber
+export const users=[
+    {
+        id:1,
+        firstName:"firdevs",
+        lastName:"inal",
+        city:"İzmit",
+        age:"18",
+        creditCardNumber:"1274947",
+        type:"customer",
+
+    },
+    {
+        id:8,
+        firstName:"Hamza",
+        lastName:"Bay",
+        city:"istanbul",
+        age:"20",
+        creditCardNumber:"378492",
+        type:"customer"
+    },
+    {
+        id:4,
+        firstName:"jinx",
+        lastName:"sukst",
+        city:"powder",
+        age:"17",
+        salary:234456,
+        type:"employee"
+
+    },
+    {
+        id:3,
+        firstName:"vi",
+        lastName:"kızkr",
+        city:"powder",
+        age:"19",
+        salary:233333,
+        type:"employee"
+    },
+    {
+        id:3,
+        firstName:"darius",
+        lastName:"kızkr",
+        city:"powder",
+        age:"19",
+        salary:22455565,
+        type:"employee"
+    }
+]

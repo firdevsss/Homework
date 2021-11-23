@@ -86,7 +86,8 @@ function primeNumber() {
     let primeNumbers = []
     for (let i = 2; i <= 1000;i++){
         let situation = true ;
-        for (let j =2;j <i; j++){
+        for (let j =2;j <i; j++)
+        {
             if(i%j==0)
             situation=false;
         }

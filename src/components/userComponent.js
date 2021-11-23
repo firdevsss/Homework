@@ -1,30 +1,27 @@
 import UserService from "../services/userService.js"
 import User from "../models/user.js"
+import customer from"../models/customer.js"
+import employee from"../models/employee.js"
 import { Baselogger, Elasticlogger } from "../crossCuttingConcerns/logging/logger.js"
+import CustomerService from "../services/customerService.js"
+import EmployeeService from "../services/employeeService.js"
 
-console.log("user component yüklendi")
-
-let logger1 = new Elasticlogger(logger1)
-let userService = new UserService(logger1)
-
-let user1= new User(1,"hmz","kedkesi","sivas",);
-let user2= new User(2,"majin","boo","çikolata");
-userService.add(user1)
-userService.add(user2)
-console.log(userService.list())
-console.log(userService.getById(2))
-console.log(userService.add)
-
+let userService = new UserService();
+let customerService = new CustomerService();
+let employeeService = new EmployeeService();
+console.log("user component uploaded ")
+console.log(customerService.customers)
+//userService.load()
+//console.log(userService.errors)
+//let user = new User(1, "firdevs", "inal", 17, 2004, "inalfirdevs@1222", 109999);
+//console.log(userService.users)
 
 
+//userService.add(user)
+//userService.getById(1);
+//userService.list();
 
-userService.getById(1)
-userService.list()
+//let customer = { id: 1, name: "firdevs" }
 
-
-
-//prototyping
-let customer = {id:1, firstName:"hmz"}
-
- customer.lastName = "kedkesi"
- console.log(customer.lastName)
+//customer.lastName = "inal"
+//console.log(customer.lastName)

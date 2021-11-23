@@ -1,13 +1,17 @@
-console.log("merhaba")
+import CustomerService from "./services/customerService";
+import DataControlService from "./services/DataControlService";
+import EmployeeService from "./services/employeeService";
+import UserService from "./services/userService";
 
-let dolarDun = 9.20
+let customerService = new CustomerService();
+let employeeService = new EmployeeService();
+let userService = new UserService();
 
-let dolarBugun = 9.15
+let dataControlService = new DataControlService(userService,customerService,employeeService)
+dataControlService.load()
 
-{
-    let dolarDun = 9.10
-}
-console.log(dolarBugun)
-let konutKredileri = ["konut kredisi" , "ihtiyac kredisi"]
+console.log(userService.list())
+console.log(employeeService.list())
+console.log(customerService.list())
 
 
