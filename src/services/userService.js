@@ -1,23 +1,13 @@
-import { users } from "../data/users.js"
-
-export default class UserService{
-
-    constructor(loggerService){
-        this.employees=[]
-        this.customers= []
-        this.loggerService = loggerService
-    }
-
-    add(user){
-        //this.users.push(user)
-        this.loggerService.log(user)
-    }
-
-    list(){
-        return this.users
-    }
-    getById(id){
-        //return this.users.find(u=>u.id ==id)
-    }
-
+import { users } from "../data/users.js";
+import UserRepository from '../repositories/userRepository.js'
+import UserValidation from "../core/validation/userValidation.js"
+export default class UserService {
+  constructor(loggerService) {
+    this.userRepository = new UserRepository();
+    this.userValidation = new UserValidation();
+    this.loggerService = loggerService;
+  }
+  listUsers() {
+    return this.userRepository.listUsers();
+  }
 }

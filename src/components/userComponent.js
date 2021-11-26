@@ -2,7 +2,7 @@ import UserService from "../services/userService.js"
 import User from "../models/user.js"
 import customer from"../models/customer.js"
 import employee from"../models/employee.js"
-import { Baselogger, Elasticlogger } from "../crossCuttingConcerns/logging/logger.js"
+import { Baselogger, Elasticlogger } from "../core/crossCuttingConcerns/logging/logger.js"
 import CustomerService from "../services/customerService.js"
 import EmployeeService from "../services/employeeService.js"
 
